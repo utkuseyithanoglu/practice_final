@@ -177,16 +177,16 @@ When asked general questions like 'which season is best', run the prediction fun
 across all 4 seasons using typical average values and compare automatically.
 
 Common call type mappings:
-- Heart attack / cardiac arrest → CARD
-- Broken bone / fracture → INJMIN or INJMAJ
-- Breathing difficulty → DIFFBR
-- Unconscious person → UNC
-- Car accident → MVA
-- Stroke → CVA
-- Psychiatric emergency → EDP
-- Stabbing → STAB
-- Shooting → SHOT
-- Sick person → SICK
+- Heart attack / cardiac arrest  CARD
+- Broken bone / fracture  INJMIN or INJMAJ
+- Breathing difficulty  DIFFBR
+- Unconscious person  UNC
+- Car accident MVA
+- Stroke  CVA
+- Psychiatric emergency  EDP
+- Stabbing STAB
+- Shooting  SHOT
+- Sick person SICK
 
 Average response time by borough (minutes): {borough_avg}
 Average response time by month: {monthly_summary}
