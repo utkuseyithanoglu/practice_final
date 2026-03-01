@@ -25,3 +25,5 @@ seaborn>=0.12.2
 xgboost
 streamlit
 openai
+streamlit==1.41.0
+altair==4.2.2
