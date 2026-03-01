@@ -227,7 +227,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("🚑 NYC 911 EMS Response Time Assistant")
-st.caption("Powered by Random Forest + SARIMAX | NYC EMS Data (Sep 2024 - Aug 2025)")
+st.caption("Powered by Random Forest + SARIMAX | NYC EMS Data (Sep 2024 - Aug 2025) | Built by Ayman Tabidi, Sarah Oasier & Utku Seyithanoğlu")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
