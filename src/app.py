@@ -19,7 +19,7 @@ def load_all_data():
     hourly_df = pd.read_csv("../data/raw/hourly_location_avg.csv")
     monthly_df = pd.read_csv("../data/raw/monthly_location_avg.csv")
     rf_preds = pd.read_csv("../data/raw/hourly_rf_predictions.csv")
-    df2 = pd.read_csv(r"..\utku folder\ALL_BOROUGHS_SARIMA_72H.csv")
+    df2 = pd.read_csv("../utku folder/ALL_BOROUGHS_SARIMA_72H.csv")
     return hourly_df, monthly_df, rf_preds, df2
 
 models = load_models()
