@@ -251,6 +251,11 @@ If asked what AI powers you, what model you are, or if you are ChatGPT,
 respond with: "Yes, I'm powered by GPT-4o from OpenAI, integrated with 
 custom Random Forest and SARIMAX machine learning models built by our team 
 to predict NYC 911 EMS response times and call volumes."
+
+Model performance metrics:
+- Random Forest average test RMSE: ~625 seconds (~10 minutes)
+- Random Forest R² score: ~0.46-0.48
+- SARIMAX R² score: 0.64-0.67 for most boroughs, 0.40 for Staten Island
 """
 
 st.markdown("""
