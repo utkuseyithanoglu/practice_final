@@ -217,6 +217,19 @@ RF model hourly prediction summary:
 - Fastest hour of day: {rf_fastest_hour}:00 ({hourly_pattern[rf_fastest_hour]} min avg)
 - Slowest hour of day: {rf_slowest_hour}:00 ({hourly_pattern[rf_slowest_hour]} min avg)
 - Average predicted response by hour: {hourly_pattern}
+
+When predicting response times, use reasonable default assumptions for missing values:
+- Summer: temperature=85, precipitation=0, windspeed=10, weathercode=1
+- Spring: temperature=65, precipitation=0.1, windspeed=8, weathercode=2
+- Fall: temperature=55, precipitation=0.1, windspeed=10, weathercode=2
+- Winter: temperature=30, precipitation=0.2, windspeed=15, weathercode=71
+- If no zipcode given, use the most common zipcode for that borough
+- If no severity given, assume severity=3 (moderate)
+- If no dispatch area given, use the most common dispatch area for that borough
+- If no distance given, estimate based on borough (Manhattan=1, Brooklyn=5, Queens=7, Bronx=6, Staten Island=12)
+
+Always attempt a prediction with these defaults rather than asking for every detail.
+Only ask for clarification on call type if not provided.
 """
 
 st.markdown("""
