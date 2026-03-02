@@ -53,7 +53,8 @@ sarima_forecast_summary = forecast_df.groupby('borough')['predicted_calls'].mean
 sarima_peak_borough = max(sarima_forecast_summary, key=sarima_forecast_summary.get)
 sarima_quiet_borough = min(sarima_forecast_summary, key=sarima_forecast_summary.get)
 sarima_accuracy = test_df.groupby('borough').apply(
-    lambda x: round(((x['predicted_calls'] - x['actual_calls']).abs() / x['actual_calls']).mean() * 100, 2),
+    lambda x: round(((x['predicted_calls'] - x['actual_calls']).abs() / 
+    x['actual_calls'].replace(0, float('nan'))).mean() * 100, 2),
     include_groups=False
 ).to_dict()
 
