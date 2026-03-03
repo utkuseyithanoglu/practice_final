@@ -46,6 +46,10 @@ if page == "Dashboard":
             </p>
         """, unsafe_allow_html=True)
 
+    st.markdown("### 📊 Raw Data: EMS Calls by Hour")
+    hour_url = "https://public.tableau.com/views/Book1_17725767248200/Sheet1?:showVizHome=no"
+    st.components.v1.iframe(hour_url, height=500, scrolling=True)
+
     st.markdown("### 📊 Raw Data: EMS Calls by Month")
     bar_url = "https://public.tableau.com/views/barchart1_17725628862930/Sheet2?:showVizHome=no"
     st.components.v1.iframe(bar_url, height=500, scrolling=True)
