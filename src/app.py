@@ -99,7 +99,7 @@ if page == "Dashboard":
     st.markdown("### 📊 Demand & Response Intelligence Dashboard")
     st.markdown("This dashboard helps forecast emergency demand and response performance across NYC boroughs.")
     st.divider()
-    tableau_url = "https://public.tableau.com/views/predictcallsbyborough/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    tableau_url = "https://public.tableau.com/views/predictcallsbyborough/Dashboard2?:showVizHome=no&:embed=true"
     st.components.v1.iframe(tableau_url, height=1800, scrolling=True)
     st.divider()
 
