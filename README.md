@@ -2,7 +2,9 @@
 
 This project analyzes New York City EMS 911 call data to uncover patterns and build predictive models for emergency response.
 
-link : https://nyc-ems-chatbot1.streamlit.app
+## 🌐 Live Demo
+👉 [Open Streamlit App](https://nyc-ems-chatbot1.streamlit.app)
+
 ## 📊 Project Goals
 - Analyze call patterns by borough and time
 - Identify trends and high-demand periods
@@ -30,7 +32,10 @@ NYC EMS 911 Calls dataset (cleaned and processed)
 - Forecasted EMS demand
 - Interactive dashboard (Tableau / Streamlit)
 
-## 🚀 How to Run
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+## 📈 Key Insights
+
+- EMS call volume is highest in Brooklyn compared to other boroughs  
+- Peak call hours occur during late afternoon and evening periods  
+- Seasonal patterns show increased demand during specific months  
+- SARIMA model successfully captures time-based trends in call volume  
+- Random Forest highlights key features influencing response patterns  
